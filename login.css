@@ -1,0 +1,67 @@
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Cambria, Cochin, Georgia;
+        background:url('c1.jpg');
+        background-size: cover;
+        background-position: center;
+       
+    }
+    p { text-decoration: none;}
+    .ole {
+        width: 300px;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+        background: rgb(185, 182, 182);
+        padding: 20px;
+        margin: 8% auto 0;
+        text-align: center;
+        opacity: 0.8;
+    }
+        
+  
+    .ole h1 { 
+        color: blue;
+        margin-bottom: 20px;
+    }
+    .box-shadow {
+        border-radius: 5px;
+        padding: 10px;
+        margin: 5px;
+        width: 90%;
+        border: none;
+        outline: none;
+        }
+        
+        a { text-decoration: none;}
+    .ole img { 
+        width: 20%;
+        height: 20%;
+        border-radius: 50%;
+        margin-top: -30px;
+    }
+    #submit
+    {
+        padding: 5px 40px;
+        width: 200px;
+        border-radius: 5px;
+        border: none;
+        background-color: red;
+    }
+    #submit:hover
+    {
+       opacity: 1.0;
+       background-color: green;
+    }
+   button { 
+        width: 150px;
+        height: auto;
+        padding: 10px;
+        margin-left: 70px;
+        border-radius: 6px;
+        background-color: rgb(14, 167, 8);
+        margin-top: 50px; 
+        color: white;
+    }
+    

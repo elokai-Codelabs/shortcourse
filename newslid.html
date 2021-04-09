@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="newslid.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="mult_color_border"></div>
+        <div class="top_nav">
+            <div class="left">
+                <div class="logo">
+                 <a href="https://www.adventist.org/"> <img src="sdalogo.png" alt="Logo"></a>
+                   <!-- <p><span>Coding</span>  Market</p>-->
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="index.html">Login</a></li>
+                    <li><a href="#">SignUp</a></li>
+                    <li><a href="#">Archives</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom_nav">
+        <ul>
+            <li><a href="#">Bible Studies</a></li>
+            <li><a href="#">Districts </a></li>
+            <li><a href="#">Departments</a></li>                
+            <li><a href="#">News</a></li>
+            <li><a href="#">Officers</a></li>
+            <li><a href="#">Beliefs</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">About Us</a></li> 
+        </ul> 
+        </div>
+    </div>
+    <div class="container">
+        <div class="mySlides">
+          <img src="1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="3.jpg" style="width:100%">
+        </div>
+          
+        <div class="mySlides">
+          <img src="3.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="4.jpg" style="width:100%">
+        </div>
+          
+        <div class="mySlides">
+          <img src="5.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <img src="Os1.jpg" style="width:100%">
+          </div>
+          
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+       
+      
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+        <section id="nav2">
+            <div>
+                <ul>
+                    <li><a href="#">Outreach</a></li>
+                    <li><a href="#">Donations</a></li>
+                    <li><a href="#">Achieves</a></li>
+                    <li><a href="#">Officers</a></li>
+                </ul>
+            </div>
+    
+        </section>
+        <section id="footer1">
+            <div class="footbac">
+                <div class="boxfloat">
+                    <h2>Attendance Form</h2>
+                   <a href="index.html"> <button class="btn">Register</button></a>
+                </div>
+                <div class="boxfloat">
+                    <h2>Give us your feedback </h2>
+                    <p>We want to know how this website works for you. Please let us know
+                         your suggestions for improvement</p>
+                         <a href="http://bit.ly/MyBestFriendsForm"> <button class="btn1">Fill this Form</button></a>   
+                       
+                </div>
+    
+                <div class="boxfloat">
+                    <h2>Stay Connected</h2>
+                    <a href="# " class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="https://www.youtube.com/results?search_query=okai+larbi+ernest" class="fa fa-youtube"></a>
+                </div>
+    
+            </div>
+        </section>
+        <footer>
+            <code><span style="color: gray; height: 40px;"> Copyright <span>&copy;</span> 2020,</span> <span style="color: white;">Okai Larbi Ernest</span> </code> 
+       </footer>
+      
+</body>
+</html>

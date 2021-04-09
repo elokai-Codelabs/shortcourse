@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>SignUp</title>
+</head>
+<body>
+    <div class="head">
+        <h1>BIBLE STUDIES FORM</h1>
+    </div>
+    <form action="firstsignup.php" method="POST">
+    <div class="leftside">
+        <div>
+            <input type="text" name="fname" id="First Name" placeholder="First Name" required class="box1" autofocus
+            autocomplete="off" title="Enter your first name">
+        </div>
+        <div>
+            <input type="text" name="lname" id="Last Name" placeholder="Last Name" required class="box1" 
+            title="Enter your lastname/Surname here">
+        </div>
+        <div>
+            <input type="email" name="email" id="email" placeholder="Email Address" required class="box1" 
+            title="Enter a valid email or email">  
+              </div>
+         <div>
+            <select name="Gender" id="Gender" class="box1"  title="Enter your status whether you are male or female">
+                <option value="jan">Gender</option>
+                <option value="jan">Male</option>
+                <option value="jan">Female</option>
+            </select>
+         </div>
+        <div>
+            <input type="text" name="Address" id="Address" placeholder="Address" required class="box3" title="Enter your Address">
+        </div>
+    </div> 
+    <div class="rightside">
+        <div>
+            <input type="text" name="Nationality" id="Nationality" placeholder="Nationality" required class="box1" autocomplete="off" title="If you are from Ghana, write Ghanian!!">
+        </div>
+        <div>
+            <input type="text" name="Username" id="Username" placeholder="Username" required class="box1" 
+            title="Enter a valid Username">
+        </div>
+        <div>
+            <select name="Gender" id="Gender" class="box1"  title="Enter your status whether you are male or female">
+                <option value="option">Bible Studies Options</option>
+                <option value="jan">Devotional</option>
+                <option value="jan">Lessons on Bible Prophecy(Daniel and Revelation)</option>
+                <option value="jan">Lessons on Marriage</option>
+                <option value="jan">Lessons on Law and Grace</option>
+                <option value="jan">Lessons on the Sabbath</option>
+                <option value="jan">Lessons on the Trinity</option>
+                <option value="jan">Lessons on The plan of Salvation</option>
+                <option value="jan">Lessons on whether Women can be ordained or not </option>
+                <option value="jan">Lessons on The Adventist Doctrines</option>
+                <option value="jan">Other</option>
+            </select>
+         </div>
+        <div>
+            <input type="password" name="password" id="password" placeholder="password" required class="box1" title="The password must be genuine">
+        </div>
+        <div>
+            <input type="text" name="Confirm Password" id="Confirm Password" placeholder="Confirm Password" required class="box3" title="Confirm your password">
+        </div>
+        <div>
+            <a href="homepage.html">
+                <img src="sup2.png" alt="signup" id="signup-btn" >
+            </a>
+        </div>
+    </div> 
+</form>
+</body>
+</html>

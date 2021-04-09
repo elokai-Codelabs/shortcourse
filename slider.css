@@ -1,0 +1,223 @@
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+.wrapper .mult_color_border{
+    width: 100%;
+    height: 5px;
+    border-top:4px solid green ;
+}
+.wrapper .top_nav
+{
+    width: 100%;
+    height: 65px;
+    background: #ccc;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper .top_nav .left
+{
+    display: flex;
+    align-items: center;   
+}
+.wrapper .top_nav .left .logo p
+{
+    font-size: 24px;
+    font-weight: 24px;
+    color: #494949;
+    margin-right: 25px;
+}
+.wrapper .top_nav .left .logo p span
+{
+    font-family: 'Franklin Gothic Medium';
+    color: rgba(204, 8, 8, 0.8);
+}
+.wrapper .top_nav .left .search input[type="text"]
+{
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    
+}
+.wrapper .top_nav .left .search input[type="text"]:focus
+{
+   width: 250px;
+}
+/* REMEMBER TO USE FLOAT TO SIMPLIFY THEM ALL*/
+.wrapper .top_nav .right ul/* OR Add li to it and float:left +Padding */
+{
+    display: flex;
+ }
+ .wrapper .top_nav .right ul li/* OR Add li to it and float:left +Padding */
+{
+    margin: 0 12px;
+ }
+ .wrapper .top_nav .right ul li a
+{
+   color:  #494949;;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 21px;
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+ .wrapper .top_nav .right ul li:last-child
+ {
+     background: #10d310;
+     margin-right: 0;
+     border-radius: 3px;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+     padding: 2px;
+ }
+ .wrapper .top_nav .right ul li:hover:last-child
+ {
+    background: tomato;
+ }
+ .wrapper .bottom_nav 
+    { width: 100%;
+     background: #f9f9f9;
+     height: 45px;
+     padding: 0  50px;    
+ }
+ .wrapper .bottom_nav ul
+ {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+ }
+ .wrapper .bottom_nav ul li
+{
+    float: left;
+    height: 40px;
+    width: 150px;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    
+}
+.wrapper .bottom_nav ul li a
+{
+    text-decoration: none;
+    color: blue;
+    display: block;
+   
+}
+.wrapper .bottom_nav ul li a:hover
+{
+    background-color: gray;
+    color: white;
+    opacity: 1.0;
+    border-bottom: 1px solid black; 
+}
+.wrapper .bottom_nav ul li ul li
+{
+    display: none;
+    background-color: wheat
+}
+.wrapper .bottom_nav ul li:hover ul li
+{
+    display: block;
+}
+
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}

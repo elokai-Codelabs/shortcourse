@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKAI LARBI ERNEST</title>
+    <link rel="stylesheet" href="homepage1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <div class="wrapper">
+        <div class="mult_color_border"></div>
+        <div class="top_nav">
+            <div class="left">
+                <div class="logo">
+                 <a href="https://www.adventist.org/"> <img src="sdalogo.png" alt="Logo"></a>
+                   <!-- <p><span>Coding</span>  Market</p>-->
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="https://www.amazingfacts.org/media-library/read/c/1/t/free-book-library">Amazing Facts</a></li>
+                    <li><a href="https://www.hopetv.org/hopess/">HopeTv</a></li>
+                    <li><a href="https://whiteestate.org/">Ellen White Writings</a></li>
+                    <li><a href="https://absg.adventist.org/">Sabbath School</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom_nav">
+            <ul>
+                <li><a href="bible.html">Bible Studies</a></li>
+                <li><a href="Districts.html">Districts </a></li>
+                <li><a href="#">Departments</a></li>                
+                <li><a href="#">News</a></li>
+                <li><a href="#">Officers</a></li>
+                <li><a href="#">Beliefs</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">About Us</a></li> 
+            </ul> 
+            </div>
+    </div>
+  
+    <div class="container">
+      <div class="mySlides">
+        <img src="1.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <img src="2.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <img src="3.jpg" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <img src="3.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <img src="4.jpg" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <img src="5.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+          <img src="Os1.jpg" style="width:100%">
+        </div>
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+     
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+<section id="dynamic-box">
+  <div class="dynamic-float">
+      <h2>Bible Studies</h2>
+  <div class="dynafloat">
+      <img src="ole.jpeg" alt="olehope3">
+  </div>
+  <div class="dynafloat">
+      <div>
+      <p>In our Bible Studies, we will learn about Biblical Prophecies,The Seventh-day Adventist Doctrines,The Trinity 
+           <span id="dots">...</span><span id="more">
+             God's law, The plan of Salvation,The life story of Patriacks, Prophets,Kings and their moral lessons.</p>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+
+<script>
+function myFunction() {
+var dots = document.getElementById("dots");
+var moreText = document.getElementById("more");
+var btnText = document.getElementById("myBtn");
+
+if (dots.style.display === "none") {
+dots.style.display = "inline";
+btnText.innerHTML = "Read more"; 
+moreText.style.display = "none";
+} else {
+dots.style.display = "none";
+btnText.innerHTML = "Read less"; 
+moreText.style.display = "inline";
+}
+}
+</script>
+  </div>
+</div>
+</div></section>
+
+<section id="dynamic-box">
+  <div class="dynamic-float">
+      <h2>Districts and their local churches</h2>
+  <div class="dynafloat">
+      <img src="ole.jpeg" alt="olehope3">
+  </div>
+  <div class="dynafloat">
+      <div>
+      <p>The Church has various divisions that work together to prepare the world for God. A group of Local Churches makes a District</p><br>
+       <a href="#"><button class="btn4">Find out more</button></a>
+  </div>
+</div>
+</div></section>
+<div>
+<section id="dynamic-box">
+  <div class="dynamic-float">
+      <h2>Header Text</h2>
+  <div class="dynafloat">
+      <img src="ole.jpeg" alt="olehope3">
+  </div>
+  <div class="dynafloat">
+      <div>
+      <p>Seventh-day Adventist beliefs are meant to permeate your whole life. Growing out of scriptures
+           that paint a compelling portrait of God, you are invited to explore, experience and know
+            the One who desires to make us whole.</p><br>
+       <a href="#"><button class="btn4">Find out more</button></a>
+  </div>
+</div>
+</div></section>
+<section id="dynamic-box">
+  <div class="dynamic-float">
+      <h2>Header Text</h2>
+  <div class="dynafloat">
+      <img src="ole.jpeg" alt="olehope3">
+  </div>
+  <div class="dynafloat">
+      <div>
+      <p>Seventh-day Adventist beliefs are meant to permeate your whole life. Growing out of scriptures
+           that paint a compelling portrait of God, you are invited to explore, experience and know
+            the One who desires to make us whole.</p><br>
+       <a href="#"><button class="btn4">Find out more</button></a>
+  </div>
+</div>
+</div></section>
+<section id="dynamic-box">
+  <div class="dynamic-float">
+      <h2>Header Text</h2>
+  <div class="dynafloat">
+      <img src="ole.jpeg" alt="olehope3">
+  </div>
+  <div class="dynafloat">
+      <div>
+      <p>Seventh-day Adventist beliefs are meant to permeate your whole life. Growing out of scriptures
+           that paint a compelling portrait of God, you are invited to explore, experience and know
+            the One who desires to make us whole.</p><br>
+       <a href="#"><button class="btn4">Find out more</button></a>
+  </div>
+</div>
+</div></section>
+
+
+<section id="dynamic-box">
+  <div class="dynamic-float">
+      <h2>Our Channel</h2>
+  <div class="dynafloat">
+      <img src="ole.jpeg" alt="olehope3">
+  </div>
+  <div class="dynafloat">
+    <iframe width="400" height="200" src="https://www.youtube.com/embed/-xWdnlMY90Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div></section>
+
+            
+        <section id="nav2">
+          <div>
+              <ul>
+                  <li><a href="#">Outreach</a></li>
+                  <li><a href="#">Donations</a></li>
+                  <li><a href="#">Achieves</a></li>
+                  <li><a href="#">Officers</a></li>
+              </ul>
+          </div>
+  
+      </section>
+       
+    <section id="footer1">
+        <div class="footbac">
+            <div class="boxfloat">
+                <h2>Attendance Form</h2>
+               <a href="login.html"> <button class="btn">Register</button></a>
+            </div>
+            <div class="boxfloat">
+                <h2>Give us your feedback </h2>
+                <p>We want to know how this website works for you. Please let us know
+                     your suggestions for improvement</p>
+                     <a href="feedback.html"> <button class="btn1">Fill this Form</button></a>   
+                   
+            </div>
+
+            <div class="boxfloat">
+                <h2>Stay Connected</h2>
+                <a href="https://web.facebook.com/?_rdc=1&_rdr " class="fa fa-facebook"></a>
+                <a href="http://bit.ly/SSBibleStudies"  class="fa fa-whatsapp"></a>
+                <a href="mailto:elokai@st.ug.edu.gh"  class="fa fa-envelope-o"></a>
+                <a href="https://www.youtube.com/results?search_query=okai+larbi+ernest" class="fa fa-youtube"></a>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <code><span style="color: gray; height: 40px;"> Copyright <span>&copy;</span> 2021,</span> <span style="color: white;">Okai Larbi Ernest</span> </code> 
+   </footer>
+</body>
+</html>

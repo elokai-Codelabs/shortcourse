@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "noto serif",Georgia,Times,times new roman,serif;
+    box-sizing: border-box;
+}
+
+
+
+    #dynamic-box
+    {
+        margin-left: 150px;
+        margin-right: 300px;
+
+    }
+    #dynamic-float
+    {
+      display: inline;
+      line-height: 40px;
+    }
+    #dynamic-box
+    {
+        height: 320px;
+        width: 70%;
+        background: #c7c5c1/*white*/;
+        padding-top: 20px;
+        border-bottom: 1px solid white;
+    }
+      
+    .dynafloat
+    {
+        float: left;
+        width: 200px;
+        margin: 0px 30px;
+    }
+    
+    .dynafloat img
+    {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0px  10px 0px 120px;
+    }
+    #dynamic-box h2
+    {
+        color: #528d3a;
+        font-weight: 800px;
+        margin-left: 100px;
+        padding: 10px;
+    }
+    .dynafloat p
+    {
+        font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+        font-size: 18px;
+        width: 400px;
+        line-height: 1.4;   
+    }
+    #more {display: none;
+        font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;}
+        .dynafloat #myBtn
+        {
+            padding: 5px;
+            background: #ffffff;
+            color: blue;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+.btn 
+{
+   cursor: pointer;
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    width: 100px;
+    
+}
+.btn1
+{
+    cursor: pointer;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 8px;
+    width: 150px;
+}
+.btn4
+{
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    width: 100px;
+    color: #FFBF0D;
+    font-weight: 400;
+}
+

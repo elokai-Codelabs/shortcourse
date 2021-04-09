@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "noto serif",Georgia,Times,times new roman,serif;
+    box-sizing: border-box;
+}
+/*img{
+    height: 40px;
+    width: 40px;
+}
+.logo, .search{
+    float: left;
+    width: 50px;  HOW TO REMOVE img BACKGROUND*/
+
+.wrapper
+{
+    background:  #bfd7e9;
+}
+.wrapper .top_nav
+{
+    width: 100%;
+    height: 120px;
+
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper .top_nav .left
+{
+    display: flex;
+    align-items: center;   
+}
+.logo img
+{
+    width: 140px;
+    height: 100px;
+}
+.logo, .search
+{
+    padding: 10px;
+}
+/*.wrapper .top_nav .left .logo p
+{
+    font-size: 24px;
+    font-weight: 24px;
+    color: #494949;
+    margin-right: 25px;
+}
+.wrapper .top_nav .left .logo p span
+{
+    font-family: 'Franklin Gothic Medium';
+    color: rgba(204, 8, 8, 0.8);
+}*/
+.wrapper .top_nav .left .search input[type="text"]
+{
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    
+}
+.wrapper .top_nav .left .search input[type="text"]:focus
+{
+   width: 250px;
+}
+/* REMEMBER TO USE FLOAT TO SIMPLIFY THEM ALL*/
+.wrapper .top_nav .right ul/* OR Add li to it and float:left +Padding */
+{
+    display: flex;
+ }
+ .wrapper .top_nav .right ul li/* OR Add li to it and float:left +Padding */
+{
+    margin: 0 12px;
+ }
+ .wrapper .top_nav .right ul li a
+{
+   color:  #494949;;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 21px;
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+ .wrapper .top_nav .right ul li:last-child
+ {
+     background: #10d310;
+     margin-right: 0;
+     border-radius: 3px;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+     padding: 2px;
+ }
+ .wrapper .top_nav .right ul li:hover:last-child
+ {
+    background: tomato;
+ }
+ .wrapper .bottom_nav 
+    { width: 100%;
+     background: #bfd7e9;
+     height: 45px;
+     padding: 0  50px;    
+ }
+ .wrapper .bottom_nav ul
+ {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+ }
+ .wrapper .bottom_nav ul li
+{
+    float: left;
+    height: 40px;
+    width: 130px;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    
+}
+.wrapper .bottom_nav ul li a
+{
+    text-decoration: none;
+    font-family: "noto serif",Georgia,Times,times new roman,serif;
+    color: blue;
+    display: block;  
+}
+.wrapper .bottom_nav ul li a:hover
+{
+    background-color: gray;
+    color: white;
+    opacity: 1.0;
+    border-bottom: 1px solid black; 
+}
+.wrapper .bottom_nav ul li ul li
+{
+    display: none;
+    background-color: wheat;
+}
+.wrapper .bottom_nav ul li ul li a
+{
+    color: #050402;
+}
+.wrapper .bottom_nav ul li:hover ul li
+{
+    display: block;
+}
+
+
+img {
+    vertical-align: middle;
+  }
+  
+  
+#dynamic-box
+{
+    margin-left: 150px;
+    margin-right: 300px;
+
+}
+#dynamic-float
+{
+  display: inline;
+  line-height: 40px;
+}
+#dynamic-box
+{
+    height: 320px;
+    width: 70%;
+    background: #c7c5c1/*white*/;
+    padding-top: 20px;
+    border-bottom: 1px solid white;
+}
+
+ 
+
+.dynafloat
+{
+    float: left;
+    width: 200px;
+    margin: 0px 30px;
+}
+
+.dynafloat img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0px  10px 0px 120px;
+}
+#dynamic-box h2
+{
+    color: #528d3a;
+    font-weight: 800px;
+    margin-left: 100px;
+    padding: 10px;
+}
+.dynafloat p
+{
+    font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    width: 400px;
+    line-height: 1.4;   
+}
+#more {display: none;
+    font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;}
+    .dynafloat #myBtn
+    {
+        padding: 5px;
+        background: #ffffff;
+        color: blue;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+ #nav2/*Give background to wrapper to affect all the  nav*/
+ {
+     width: 100%;
+     background: #2B286F;
+     height: 45px;
+     padding: 0  50px;    
+ }
+ #nav2 ul
+ {
+     width: 100%;
+     height: 45px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ #nav2 ul li a
+ {
+    color: #FFBF0D;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 12px;
+ }
+ #nav2 ul li a:hover
+ {
+     background: gray;
+     color: white;
+    padding-right: 10px;
+ }
+ #footer1
+ {
+    overflow: auto;
+    padding: 10px 20px;
+    background: #c7c5c1;
+    border-top: 1px solid #b08b57;
+    border-radius: 6px solid #2B2834;
+    width: 100%;
+    height: 250px;
+    line-height: 1.6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+  #footer1 .boxfloat
+ {
+     float: left;
+     width: 30%;
+     padding: 10px;
+     text-align: center;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .fpp a
+ {
+    color: red;
+}
+#footer1 .boxfloa .fa fa-instagram
+ {
+    color:rgb(64, 93, 230t);
+}
+#footer1 .boxfloa .fa fa-twitter-square
+ {
+    color: rgb(29, 161, 242);
+} 
+#footer1 .boxfloat .fa fa-facebook-official
+ {
+    color: /*#3b5998*/royalblue;
+}
+  
+    #more {display: none;
+        font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;}
+        .dynafloat #myBtn
+        {
+            padding: 5px;
+            background: #ffffff;
+            color: blue;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+.btn 
+{
+   cursor: pointer;
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    width: 100px;
+    
+}
+.btn1
+{
+    cursor: pointer;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 8px;
+    width: 150px;
+}
+.btn4
+{
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    width: 100px;
+    color: #FFBF0D;
+    font-weight: 400;
+}
+
+.btn:focus,.btn1:focus
+{
+width: 250px;
+}
+  
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-envelope-o
+{
+    background: #c94747;
+    color: white;
+}
+.fa-whatsapp{
+    background: #0d610a;
+    color: white;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+footer
+{ 
+    overflow: auto;
+    padding: 10px 20px;
+    background: #2B286F;
+    border-top: 1px solid #b08b57;
+    border-radius: 6px solid #2B2834;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+}
+
+
+
+
